@@ -25,7 +25,7 @@ public class Main {
 
         new CRUD<Persona>().save(new Persona("Joshua la perra", "Monte la zanja", "Bachiller", "klk", "Klk"));
 
-        get("/Crear", (request, response) -> {
+        get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
             return new ModelAndView(attributes, "create.ftl");
         }, freeMarkerEngine);
