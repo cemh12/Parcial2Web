@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html manifest="/manifest.appcache">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Create - parcial2web</title>
 
     <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
-    <link rel="stylesheet" type="text/css" href="../bootstrap/dist/css/bootstrap.css"/>
-    <#--<link rel="stylesheet" type="text/css" href="../css/site.css" />-->
+    <link rel="stylesheet" type="text/css" href="/bootstrap/dist/css/bootstrap.css"/>
+
 
 
 </head>
@@ -26,8 +26,6 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li><a onclick="mostrarTabla()">Lista</a></li>
-                <li><a >Registrar</a></li>
-                <li><a onclick="eliminar(25)">Eliminar</a></li>
                 <li><a id="sincronizar" onclick="sincronizar()">Sincronizar</a></li>
             </ul>
 
@@ -123,13 +121,10 @@
 </div>
 
 
-<script src="../jquery/dist/jquery.js"></script>
-<script src="../bootstrap/dist/js/bootstrap.js"></script>
-<script src="js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0"></script>
-
-
-<script src="../jquery-validation/dist/jquery.validate.js"></script>
-<script src="../jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+<script src="jquery/dist/jquery.js"></script>
+<script src="bootstrap/dist/js/bootstrap.js"></script>
+<script src="jquery-validation/dist/jquery.validate.js"></script>
+<script src="jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
 
 
 <script>

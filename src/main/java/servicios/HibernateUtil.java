@@ -15,7 +15,7 @@ public class HibernateUtil {
         SessionFactory sessionFactory = null;
         try{
             Configuration configuration = new  Configuration();
-            configuration.configure("/Hibernate/hibernate.cfg.xml");
+            configuration.configure("/META-INF/persistence.xml");
             sessionFactory = configuration.buildSessionFactory();
 
 

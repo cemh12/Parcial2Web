@@ -1,0 +1,27 @@
+CACHE MANIFEST
+# v7 - Para obligar al cambio bueno mantener una versión.
+
+#Trama que indica que
+CACHE:
+/
+bootstrap/dist/css/bootstrap.css
+bootstrap/dist/css/bootstrap-theme.css
+bootstrap/dist/js/bootstrap.js
+bootstrap/dist/js/npm.js
+jquery/dist/jquery.js
+jquery-validation/dist/jquery.validate.js
+jquery-validation/dist/additional-methods.js
+jquery-validation-unobtrusive/jquery.validate.unobtrusive.js
+
+NETWORK:
+/
+bootstrap/dist/css/bootstrap.css
+bootstrap/dist/css/bootstrap-theme.css
+bootstrap/dist/js/bootstrap.css
+bootstrap/dist/js/npm.css
+jquery/dist/jquery.js
+jquery-validation/dist/jquery.validate.js
+jquery-validation/dist/additional-methods.js
+jquery-validation-unobtrusive/jquery.validate.unobtrusive.js
+
+FALLBACK:

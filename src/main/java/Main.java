@@ -5,7 +5,7 @@ import spark.ModelAndView;
 import spark.template.freemarker.FreeMarkerEngine;
 import servicios.CRUD;
 import servicios.ServiciosBootStrap;
-import servicios.ServiciosDataBase;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -17,17 +17,19 @@ public class Main {
 
         ServiciosBootStrap.getInstancia().init();
 
-        staticFiles.location("/templates");
-        Configuration cfg = new Configuration(Configuration.VERSION_2_3_0);
-        cfg.setClassForTemplateLoading(Main.class, "/templates");
-        FreeMarkerEngine freeMarkerEngine = new FreeMarkerEngine(cfg);
+        Configuration configuration = new Configuration(Configuration.getVersion());
+        configuration.setClassForTemplateLoading(Main.class, "/templates");
+         //staticFiles.location("/publico");
+        staticFiles.location("/public");
+        FreeMarkerEngine freeMarkerEngine = new FreeMarkerEngine(configuration);
+
 
 
         new CRUD<Persona>().save(new Persona("Joshua la perra", "Monte la zanja", "Bachiller", "klk", "Klk"));
 
         get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
-            return new ModelAndView(attributes, "create.ftl");
+            return new ModelAndView(attributes, "Create.ftl");
         }, freeMarkerEngine);
 
         post("/Crear/", (request, response) -> {
