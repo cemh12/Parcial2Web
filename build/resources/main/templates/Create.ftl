@@ -21,7 +21,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">parcial2web</a>
+            <a class="navbar-brand" href="/">parcial 2 web OFFLINE </a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -45,7 +45,7 @@
 
 <div class="container body-content">
     <div id="map" style="height: 500px;"></div>
-    <script async defer
+    <script async defer href="Map.js"
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCO_2zd9toMneUXrCsYxo5mzHqxJ5Bg5g8&callback=initMap">
     </script>
     <hr/>

@@ -29,6 +29,10 @@ public class Main {
 
         get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
+            return new ModelAndView(attributes, "Create2.ftl");
+        }, freeMarkerEngine);
+        get("/Offline", (request, response) -> {
+            Map<String, Object> attributes = new HashMap<>();
             return new ModelAndView(attributes, "Create.ftl");
         }, freeMarkerEngine);
 
